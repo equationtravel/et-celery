@@ -9,7 +9,7 @@ services:
     envVars:
       - key: CELERY_BROKER_URL
         fromService:
-          name: celery-redis
+          name: equation-travel-redis
           type: redis
           property: connectionString
 
